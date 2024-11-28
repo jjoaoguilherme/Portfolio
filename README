@@ -1,0 +1,35 @@
+Meu Portfólio
+
+Funcionalidades
+Alternância de Tema: Permite alternar entre o modo claro e o modo escuro para uma melhor experiência de visualização, de acordo com a preferência do usuário.
+Seção de Projetos: Apresenta os projetos que estou desenvolvendo, incluindo o "Projeto Corridinha", um sistema em Python para gerenciamento de treinos.
+Links para Redes Sociais: Na seção "Sobre Mim", há links para o LinkedIn, GitHub e e-mail para facilitar o contato.
+Tecnologias Utilizadas
+HTML5: Estrutura e conteúdo da página.
+CSS3: Estilização das páginas, incluindo efeitos de animação e layout responsivo.
+JavaScript: Implementação do recurso de alternância de tema e armazenamento das preferências do usuário no localStorage.
+Como Usar
+Clone o repositório:
+
+bash
+Copiar código
+git clone https://github.com/seu-usuario/portfolio.git
+Abra o arquivo index.html no seu navegador para visualizar a página inicial.
+
+Interaja com o tema:
+
+O botão de alternância de tema no canto superior direito permite que o usuário altere entre os modos claro e escuro.
+A preferência de tema é salva no localStorage, o que significa que o tema selecionado será mantido mesmo após o fechamento e reabertura do navegador.
+Estrutura de Arquivos
+index.html: Página principal do portfólio, contendo a introdução e a lista de competências.
+sobre.html: Página sobre mim, com detalhes adicionais sobre a formação e projetos.
+style.css: Arquivo de estilos, com a definição do layout e personalização da aparência da página.
+theme-toggle.js: Arquivo JavaScript que gerencia a alternância entre os temas claro e escuro.
+Imgs/: Pasta contendo as imagens de perfil e ícones usados no portfólio.
+
+Licença:
+
+Contato
+LinkedIn: 
+GitHub: jjoaoguilherme
+E-mail: jgbof@cesar.school
