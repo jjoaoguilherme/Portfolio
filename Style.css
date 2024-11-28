@@ -1,0 +1,206 @@
+/* Tema padrão (modo claro) */
+body {
+   background-color: white;
+   color: black;
+}
+
+/* Modo escuro */
+body.dark-mode {
+   background-color: black;
+   color: white;
+}
+
+/* Botão para alternar tema */
+#theme-toggle {
+   position: fixed;
+   top: 10px;
+   right: 10px;
+   padding: 10px 20px;
+   cursor: pointer;
+   border: none;
+   border-radius: 10px;
+   background-color: #111;
+   color: white;
+   z-index: 1000;
+}
+
+/* Box principal com tamanho aumentado */
+.box-infor {
+   margin-top: 30px;
+   margin-left: 10px;
+   padding: 10px;
+   width: 45%; /* Ajuste para ocupar menos da largura total */
+   height: auto; /* Ajuste para adaptar ao conteúdo */
+   border: solid 1px;
+   border-radius: 10px;
+   border-color: aqua;
+   display: inline-block; /* Alinha os elementos em linha */
+   vertical-align: top; /* Garante alinhamento superior */
+   box-sizing: border-box; /* Inclui padding na largura */
+}
+
+/* Adicionando espaçamento entre os boxes */
+.box-infor:not(:last-child) {
+   margin-right: 20px; /* Espaçamento horizontal entre os boxes */
+}
+
+/* Restante do seu CSS */
+.titulo {
+   font-size: 30px;
+}
+
+/* Div principal */
+.box-central {
+   padding-left: 100px;
+   align-items: center;
+}
+
+/* Div secundária */
+.box-corpo {
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   grid-gap: 20px;
+   max-width: 1000px;
+   padding: 10px;
+   padding-top: 30px;
+}
+
+/* Foto */
+.perfil {
+   width: 400px;
+   border-radius: 10px;
+}
+
+/* Ajuste o tamanho das imagens das redes sociais */
+.redes-sociais {
+   width: 40px;   /* Diminui a largura das imagens */
+   height: 40px;  /* Diminui a altura das imagens */
+   margin: 5px;   /* Adiciona um pequeno espaçamento entre as imagens */
+}
+
+/* Parágrafo */
+.box p {
+   padding: 10px;
+   align-self: end;
+   font-size: 30px;
+}
+
+/* Subtítulo */
+.box h2 {
+   padding: 10px;
+   align-self: end;
+   font-size: 30px;
+}
+
+/* Box dos programas */
+.box-pequena {
+   width: 100px;
+   height: 100px;
+   background-color: rgb(145, 136, 153);
+   align-items: center;
+   text-align: center;
+   border-radius: 10px;
+}
+
+/* Ícones dos programas */
+.box-pequena img {
+   width: 50px;
+   height: 50px;
+   padding-top: 10px;
+}
+
+/* Legenda dos programas */
+.box-pequena h3 {
+   font-size: 13px;
+}
+
+.programas {
+   justify-content: space-between;
+   display: flex;
+   width: 70%;
+}
+
+/* Linha */
+#linha {
+   width: 40%;
+   border-bottom: 1px solid #b62323;
+}
+
+/* Box do corpo da página sobre */
+.box-perfil {
+   justify-content: center;
+   display: flex;
+   text-align: center;
+}
+
+.legendas {
+   display: block;
+}
+
+.legendas p {
+   font-size: 25px;
+   padding-right: 20px;
+}
+
+.box-sobre {
+   padding-top: 50px;
+   justify-content: center;
+   text-align: justify;
+   width: 70%;
+   margin-left: auto;
+   margin-right: auto;
+   font-size: 20px;
+}
+
+.perfil-sobre {
+   border-radius: 70px;
+   width: 200px;
+   height: 200px;
+}
+
+/* Botão com efeito brilhante */
+.glow-on-hover {
+   width: 220px;
+   height: 50px;
+   border: none;
+   outline: none;
+   color: #fff;
+   background: #111;
+   cursor: pointer;
+   position: relative;
+   z-index: 0;
+   border-radius: 10px;
+}
+
+.glow-on-hover:before {
+   content: '';
+   background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+   position: absolute;
+   top: -2px;
+   left: -2px;
+   background-size: 400%;
+   z-index: -1;
+   filter: blur(5px);
+   width: calc(100% + 4px);
+   height: calc(100% + 4px);
+   animation: glowing 20s linear infinite;
+   opacity: 0;
+   transition: opacity 0.3s ease-in-out;
+   border-radius: 10px;
+}
+
+.glow-on-hover:hover:before {
+   opacity: 1;
+}
+
+@keyframes glowing {
+   0% {
+       background-position: 0 0;
+   }
+   50% {
+       background-position: 400% 0;
+   }
+   100% {
+       background-position: 0 0;
+   }
+}
